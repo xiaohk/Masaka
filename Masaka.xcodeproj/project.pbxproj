@@ -1,0 +1,327 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1920EA45203FD47A001AAB67 /* RectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1920EA44203FD47A001AAB67 /* RectangleView.swift */; };
+		1920EA4720406D0D001AAB67 /* ColorPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1920EA4620406D0D001AAB67 /* ColorPanelViewController.swift */; };
+		193282A92037B4B1001CB350 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193282A82037B4B1001CB350 /* AppDelegate.swift */; };
+		193282AB2037B4B1001CB350 /* RectangleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193282AA2037B4B1001CB350 /* RectangleViewController.swift */; };
+		193282AD2037B4B1001CB350 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 193282AC2037B4B1001CB350 /* Assets.xcassets */; };
+		193282C12037BFCD001CB350 /* RectangleWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193282BF2037BFCD001CB350 /* RectangleWindowController.swift */; };
+		193282C42037C103001CB350 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 193282C32037C103001CB350 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1920EA44203FD47A001AAB67 /* RectangleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangleView.swift; sourceTree = "<group>"; };
+		1920EA4620406D0D001AAB67 /* ColorPanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPanelViewController.swift; sourceTree = "<group>"; };
+		193282A52037B4B1001CB350 /* Masaka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Masaka.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		193282A82037B4B1001CB350 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		193282AA2037B4B1001CB350 /* RectangleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleViewController.swift; sourceTree = "<group>"; };
+		193282AC2037B4B1001CB350 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		193282B12037B4B1001CB350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		193282B22037B4B1001CB350 /* Masaka.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Masaka.entitlements; sourceTree = "<group>"; };
+		193282BF2037BFCD001CB350 /* RectangleWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleWindowController.swift; sourceTree = "<group>"; };
+		193282C32037C103001CB350 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		193282A22037B4B1001CB350 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1932829C2037B4B1001CB350 = {
+			isa = PBXGroup;
+			children = (
+				193282A72037B4B1001CB350 /* Masaka */,
+				193282A62037B4B1001CB350 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		193282A62037B4B1001CB350 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				193282A52037B4B1001CB350 /* Masaka.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		193282A72037B4B1001CB350 /* Masaka */ = {
+			isa = PBXGroup;
+			children = (
+				193282BF2037BFCD001CB350 /* RectangleWindowController.swift */,
+				193282AA2037B4B1001CB350 /* RectangleViewController.swift */,
+				1920EA44203FD47A001AAB67 /* RectangleView.swift */,
+				1920EA4620406D0D001AAB67 /* ColorPanelViewController.swift */,
+				193282C32037C103001CB350 /* Main.storyboard */,
+				193282B82037B4B8001CB350 /* Supporting Files */,
+			);
+			path = Masaka;
+			sourceTree = "<group>";
+		};
+		193282B82037B4B8001CB350 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				193282AC2037B4B1001CB350 /* Assets.xcassets */,
+				193282A82037B4B1001CB350 /* AppDelegate.swift */,
+				193282B12037B4B1001CB350 /* Info.plist */,
+				193282B22037B4B1001CB350 /* Masaka.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		193282A42037B4B1001CB350 /* Masaka */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 193282B52037B4B1001CB350 /* Build configuration list for PBXNativeTarget "Masaka" */;
+			buildPhases = (
+				193282A12037B4B1001CB350 /* Sources */,
+				193282A22037B4B1001CB350 /* Frameworks */,
+				193282A32037B4B1001CB350 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Masaka;
+			productName = Masaka;
+			productReference = 193282A52037B4B1001CB350 /* Masaka.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1932829D2037B4B1001CB350 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Jay Wong";
+				TargetAttributes = {
+					193282A42037B4B1001CB350 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 193282A02037B4B1001CB350 /* Build configuration list for PBXProject "Masaka" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1932829C2037B4B1001CB350;
+			productRefGroup = 193282A62037B4B1001CB350 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				193282A42037B4B1001CB350 /* Masaka */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		193282A32037B4B1001CB350 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				193282C42037C103001CB350 /* Main.storyboard in Resources */,
+				193282AD2037B4B1001CB350 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		193282A12037B4B1001CB350 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				193282AB2037B4B1001CB350 /* RectangleViewController.swift in Sources */,
+				193282A92037B4B1001CB350 /* AppDelegate.swift in Sources */,
+				1920EA45203FD47A001AAB67 /* RectangleView.swift in Sources */,
+				1920EA4720406D0D001AAB67 /* ColorPanelViewController.swift in Sources */,
+				193282C12037BFCD001CB350 /* RectangleWindowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		193282B32037B4B1001CB350 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		193282B42037B4B1001CB350 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		193282B62037B4B1001CB350 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Masaka/Masaka.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VGERK2KVH9;
+				INFOPLIST_FILE = Masaka/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jay.Masaka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		193282B72037B4B1001CB350 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Masaka/Masaka.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VGERK2KVH9;
+				INFOPLIST_FILE = Masaka/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jay.Masaka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		193282A02037B4B1001CB350 /* Build configuration list for PBXProject "Masaka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				193282B32037B4B1001CB350 /* Debug */,
+				193282B42037B4B1001CB350 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		193282B52037B4B1001CB350 /* Build configuration list for PBXNativeTarget "Masaka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				193282B62037B4B1001CB350 /* Debug */,
+				193282B72037B4B1001CB350 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1932829D2037B4B1001CB350 /* Project object */;
+}
