@@ -13,6 +13,7 @@ class ColorPanelViewController: NSViewController {
     
     var colorPanel = NSColorPanel.shared
 
+    // Set up the NSColorPanel
     override func loadView() {
         self.colorPanel.showsAlpha = true
         self.colorPanel.mode = .wheel

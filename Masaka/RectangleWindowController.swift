@@ -11,16 +11,22 @@ import Cocoa
 class RectangleWindowController: NSWindowController, NSWindowDelegate {
     
     let userDefaults = UserDefaults.standard
+    var windowInitMoved = false, windowInitResized = false
 
+    // Customize the window
     override func windowDidLoad() {
         super.windowDidLoad()
-        // Customize our window
+        
         // Remove title bar from the beginning, but allow users to resize the window
         self.window!.styleMask = .resizable
         self.window!.hasShadow = false
         self.window!.level = .floating
         self.window!.canHide = true
         
+        // Set background color to transparent, so give all the control to view
+        self.window!.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0)
+        self.window!.isMovableByWindowBackground = true
+
         // Use the user default to setup the initial window size
         var dummyFrame = self.window!.frame
         let width = userDefaults.float(forKey: "width")
@@ -35,15 +41,10 @@ class RectangleWindowController: NSWindowController, NSWindowDelegate {
         }
         
         // Recover position
-        print(originX)
         if originX != 0.0 && height != 0.0 {
             dummyFrame.origin = CGPoint(x: CGFloat(originX), y: CGFloat(originY))
             self.window!.setFrame(dummyFrame, display: false)
         }
-        
-        // Set background color to transparent, so give all the control to view
-        self.window!.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0)
-        self.window!.isMovableByWindowBackground = true
     }
     
     override func mouseDown(with event: NSEvent) {
@@ -53,17 +54,29 @@ class RectangleWindowController: NSWindowController, NSWindowDelegate {
         }
     }
     
-    // Memorize the new size
-    func windowDidResize(_ notification: Notification) {
-        print("resized!")
-        userDefaults.set(self.window?.frame.width, forKey: "width")
-        userDefaults.set(self.window?.frame.height, forKey: "height")
-        print(userDefaults.float(forKey: "width"))
+    // Save the window info, but skip the inital call from initialization
+    func windowDidMove(_ notification: Notification) {
+        if self.windowInitMoved {
+            self.saveWindowInfo()
+        } else {
+            self.windowInitMoved = true
+        }
     }
     
-    // Memorize the new origin
-    func windowDidMove(_ notification: Notification) {
-        userDefaults.set(self.window?.frame.origin.x, forKey: "origin_x")
-        userDefaults.set(self.window?.frame.origin.y, forKey: "origin_y")
+    // Save the window info, but skip the inital call from initialization
+    func windowDidResize(_ notification: Notification) {
+        if self.windowInitResized {
+            self.saveWindowInfo()
+        } else {
+            self.windowInitResized = true
+        }
+    }
+    
+    // Memorize the window size and position to userdefault
+    private func saveWindowInfo(){
+        userDefaults.set(self.window!.frame.width, forKey: "width")
+        userDefaults.set(self.window!.frame.height, forKey: "height")
+        userDefaults.set(self.window!.frame.origin.x, forKey: "origin_x")
+        userDefaults.set(self.window!.frame.origin.y, forKey: "origin_y")
     }
 }
