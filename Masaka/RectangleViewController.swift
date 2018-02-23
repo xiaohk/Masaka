@@ -12,6 +12,7 @@ class RectangleViewController: NSViewController, NSPopoverDelegate {
     
     var colorPanelViewController = ColorPanelViewController()
     let popover = NSPopover()
+    let userDefaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +32,7 @@ class RectangleViewController: NSViewController, NSPopoverDelegate {
     override func mouseDown(with event: NSEvent) {
         // Close the popover when user single clicks
         if self.popover.isShown {
-            self.popover.close()
+            self.deactivatePopover()
         }
         
         // Open the popover if user double clicks
@@ -52,5 +53,18 @@ class RectangleViewController: NSViewController, NSPopoverDelegate {
         self.popover.show(relativeTo: self.view.bounds,
                           of: self.view,
                           preferredEdge: .maxX)
+    }
+    
+    // Deactivate the shown popover
+    private func deactivatePopover() {
+        // Store the final color to user default so we can recover it next time
+        // We have to store the color in NSColor format, since CGColor doesn't comfort
+        // the NSCoding protocol
+        let finalColor = self.colorPanelViewController.colorPanel.color
+        let colorData = NSKeyedArchiver.archivedData(withRootObject: finalColor)
+        userDefaults.set(colorData, forKey: "backgroundColor")
+        
+        // Close the popover window
+        self.popover.close()
     }
 }
