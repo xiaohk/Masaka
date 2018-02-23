@@ -10,7 +10,7 @@ import Cocoa
 
 class RectangleView: NSView {
     
-    @IBAction func quitMenuItemTapped(sender: NSMenuItem!){
+    @IBAction func quitMenuItemTapped(sender: NSMenuItem!) {
         exit(0)
     }
     

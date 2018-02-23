@@ -20,7 +20,7 @@ class RectangleWindowController: NSWindowController {
         self.window!.canHide = true
         
         // Set background color to transparent, so give all the control to view
-        self.window!.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.5)
+        self.window!.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0)
         self.window!.isMovableByWindowBackground = true
     }
     

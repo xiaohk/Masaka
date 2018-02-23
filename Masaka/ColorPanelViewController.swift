@@ -20,5 +20,4 @@ class ColorPanelViewController: NSViewController {
         self.colorPanel.contentView!.frame = NSMakeRect(0, 0, view.frame.width, view.frame.height)
         self.colorPanel.contentView!.autoresizingMask = [.width, .height]
     }
-    
 }

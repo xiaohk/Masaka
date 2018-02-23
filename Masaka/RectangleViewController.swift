@@ -15,8 +15,12 @@ class RectangleViewController: NSViewController, NSPopoverDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Init color panel view controller
         self.colorPanelViewController.loadView()
+        // Send message back to update color
+        self.colorPanelViewController.colorPanel.setTarget(self)
+        self.colorPanelViewController.colorPanel.setAction(#selector(self.updateColor))
         
         // init popover
         self.popover.delegate = self
@@ -25,19 +29,20 @@ class RectangleViewController: NSViewController, NSPopoverDelegate {
     }
     
     override func mouseDown(with event: NSEvent) {
-        self.view.layer!.backgroundColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
-        self.view.setNeedsDisplay(self.view.frame)
-        
         // Close the popover when user single clicks
         if self.popover.isShown {
             self.popover.close()
         }
         
-        // Open color panel if user double clicks
+        // Open the popover if user double clicks
         if event.clickCount == 2 {
-            print("Double clicked!")
             self.activatePopover()
         }
+    }
+    
+    // Update the view color based on the selected color in color panel
+    @objc private func updateColor(_ sender: NSColorPanel) {
+        self.view.layer!.backgroundColor = sender.color.cgColor
     }
     
     // Popover the color panel
@@ -48,6 +53,4 @@ class RectangleViewController: NSViewController, NSPopoverDelegate {
                           of: self.view,
                           preferredEdge: .maxX)
     }
-
 }
-
