@@ -8,6 +8,9 @@
 
 import Cocoa
 
+// Need a custom window subclass to solve one Xcode warning of null window
+class RectangleWindow: NSWindow {}
+
 class RectangleWindowController: NSWindowController, NSWindowDelegate {
     
     let userDefaults = UserDefaults.standard
@@ -20,7 +23,8 @@ class RectangleWindowController: NSWindowController, NSWindowDelegate {
         // Remove title bar from the beginning, but allow users to resize the window
         self.window!.styleMask = .resizable
         self.window!.hasShadow = false
-        self.window!.level = .floating
+        self.window!.level = .mainMenu
+        self.window!.collectionBehavior = [.fullScreenAuxiliary, .stationary, .canJoinAllSpaces]
         self.window!.canHide = true
         
         // Set background color to transparent, so give all the control to view
