@@ -23,7 +23,7 @@ class RectangleWindowController: NSWindowController, NSWindowDelegate {
         // Remove title bar from the beginning, but allow users to resize the window
         self.window!.styleMask = .resizable
         self.window!.hasShadow = false
-        self.window!.level = .mainMenu
+        self.window!.level = .floating
         self.window!.collectionBehavior = [.fullScreenAuxiliary, .stationary, .canJoinAllSpaces]
         self.window!.canHide = true
         

@@ -675,9 +675,22 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Masaka" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Masaka" customModuleProvider="target">
+                    <connections>
+                        <outlet property="menu" destination="aiH-u7-Hev" id="CwW-NW-QCp"/>
+                    </connections>
+                </customObject>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <menu id="aiH-u7-Hev">
+                    <items>
+                        <menuItem title="Quit" keyEquivalent="q" id="Agk-Ac-mno">
+                            <connections>
+                                <action selector="quitMenuItemTapped:" target="Voe-Tx-rLC" id="EsD-0y-7Za"/>
+                            </connections>
+                        </menuItem>
+                    </items>
+                </menu>
             </objects>
             <point key="canvasLocation" x="76" y="14"/>
         </scene>
