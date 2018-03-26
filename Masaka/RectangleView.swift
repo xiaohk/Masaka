@@ -28,5 +28,4 @@ class RectangleView: NSView {
         // Change the size of view when user resizes the window
         self.autoresizingMask = [.width, .height]
     }
-    
 }
