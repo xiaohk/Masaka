@@ -25,6 +25,7 @@ class RectangleViewController: NSViewController, NSPopoverDelegate {
         
         // init popover
         self.popover.delegate = self
+        self.popover.contentSize = NSSize(width: 200, height: 300)
         self.popover.contentViewController = self.colorPanelViewController
         self.popover.behavior = .semitransient
     }
