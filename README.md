@@ -1,6 +1,8 @@
 # Masaka
 > A better way to cover contents you don't want to see on macOS
 
+[![Build Status](https://travis-ci.org/xiaohk/Masaka.svg?branch=master)](https://travis-ci.org/xiaohk/Masaka)
+
 <p align="center">
 	<img src="./demo.gif" height=250>
 </p>
