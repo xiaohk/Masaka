@@ -19,7 +19,7 @@ class RectangleView: NSView {
     override func awakeFromNib() {
         self.wantsLayer = true
         // Use last time user config as the initial background color
-        var defaultColor: NSColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+        var defaultColor: NSColor = #colorLiteral(red: 1, green: 0.5533585548, blue: 0.5900861621, alpha: 1)
         if let colorData = userDefaults.object(forKey: "backgroundColor") as? Data{
             defaultColor = NSKeyedUnarchiver.unarchiveObject(with: colorData) as! NSColor
         }
